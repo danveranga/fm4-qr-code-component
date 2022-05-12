@@ -1,0 +1,62 @@
+@use 'colorways';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-size: 400;
+    margin: 0;
+}
+
+body {
+    background-color: colorways.$light-gray;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 8.5% auto;
+    .main-content {
+        background-color: colorways.$white;
+        width: 300px;
+        padding: 15px;
+        border-radius: 15px;
+        margin: 15px;
+        text-align: center;
+        font-size: 15px;
+        h1 {
+            color: colorways.$dark-blue;
+            font-size: 1.4em;
+            font-weight: 700;
+            padding: 15px 8px 8px;
+        }
+        p {
+            color: colorways.$grayish-blue;
+            padding: 8px 5px 15px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: colorways.$grayish-blue;
+    &:hover {
+        color: colorways.$dark-blue;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 5px;
+    font-size: 0.8em;
+    width: 100%;
+    text-align: center;
+}
