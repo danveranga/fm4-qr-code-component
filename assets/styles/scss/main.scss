@@ -61,3 +61,15 @@ footer {
     width: 100%;
     text-align: center;
 }
+
+@media only screen and (max-width: 768px) and (min-width: 374px) {
+    .flex-container {
+        margin: 18% auto;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .flex-container {
+        margin: 30% auto;
+    }
+}
